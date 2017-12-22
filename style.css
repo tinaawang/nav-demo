@@ -7,6 +7,11 @@ a{
     text-decoration: none;
 }
 
+body{ /*设置背景*/
+    background: grey url(./img/wall.png) no-repeat center center;
+
+}
+
 kbd{
     border:1px solid red;
     display: inline-block;
@@ -20,17 +25,20 @@ kbd{
 }
 
 main{
-
     text-align: center;
+    display: flex; justify-content: center; align-items: center; height: 100vh;
 }
 
 kbd > button{
 
-    width:3em;
-    height:2em;
+    width:2em;
+    height:1.2em;
     position: absolute;
     right: 0;
     bottom: 0;
+    border:1px solid white;
+    border-radius: 1px;
+    box-sizing: border-box;
     display: none;
 }
 
@@ -40,3 +48,57 @@ kbd:hover > button{
     display: inline-block;
 }
 
+.kbb{ /*键盘样式*/
+
+    width:50px;
+    height:40px;
+    color:white;
+    font-size:16px;
+    font-family: Helvetica;
+    background: linear-gradient(to bottom, #111111 0%,#292929 100%);
+    box-shadow: 0 0 0 1px #1A1B1C, 0 0 0 2px #1F2020, 0 3px 0 2px #080808;
+    border: 1px solid #373737; color: #C5C5C5;
+    border-radius: 6px;
+     cursor: pointer;
+}
+
+
+.row{
+ margin :20px ;
+
+}
+
+.row .kbb{
+    margin:0 10px;
+}
+
+.kbb .text{
+    position: absolute; left: 4px; top: 2px;
+}
+
+.kbb img{width: 16px; height: 16px; position: absolute; left: 4px; bottom: 2px;}
+
+
+
+.head{
+
+    display: flex; justify-content: center; align-items: center;
+
+}
+
+.head > span{
+
+    font-size:24px;
+    font-family: "Songti SC";
+    background: -webkit-linear-gradient(left, #4f185d , #fe5d4b);     /* 背景色渐变 */
+    -webkit-background-clip: text;         /* 规定背景的划分区域 */
+    -webkit-text-fill-color: transparent;  /* 原字体颜色设置为透明 */
+
+}
+
+
+
+.kbb > button{
+
+
+}
